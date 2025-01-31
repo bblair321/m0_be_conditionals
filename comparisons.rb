@@ -137,12 +137,17 @@ friends = 6
 siblings = 2
 puts friends > siblings
 # YOU DO: Explain.
+# friends is assigned integer 6.
+# siblings is assigned integer 2.
+# puts friends > siblings is checking if friends is greater than siblings.
 
 attendees = 9
 meals = 8
 puts attendees != meals
 # YOU DO: Explain.
-
+# attendees is assigned integer 9.
+# meals is assigned integer 8.
+# puts attendees != meals is checking if attendees is not equal to meals.
 
 #-------------------
 # PART 3: Logical Operators
@@ -164,16 +169,18 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
-
+# loves to play and loves treats are both true so the result is true
+puts loves_to_play && loves_treats
 # Determine if the dog loves to play and loves the dog park
-
-
+# loves to play is true but loves the dog park is false so the result is false
+puts loves_to_play && loves_dog_park
 # Determine if the dog loves to play or loves the dog park
-
-
+# loves to play is true and loves the dog park is false so the result is true
+puts loves_to_play || loves_dog_park
 # Determine if the dog loves to play and is a puppy
 # Assume that a dog is a puppy if it is less than 2 years old.
-
+# loves to play is true and age is less than 2 so the result is true
+puts loves_to_play && age < 2
 # What did your final line of code evaluate to? Why do you think that is? Explain.
 # ANSWER:
+# The final line of code evaulated to true because loves_to_play is true and age is less than 2 so the result is true.
